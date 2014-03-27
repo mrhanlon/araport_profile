@@ -15,6 +15,7 @@ function araport_profile_form_user_profile_form_alter(&$form, &$form_state) {
 }
 
 function araport_profile_form_profile2_edit_profile_form_alter(&$form, &$form_state){
+  $form['profile_profile']['#type'] = 'container';
   $form['profile_profile']['#prefix'] = '<div class="row">';
   $form['profile_profile']['#suffix'] = '</div>';
 
